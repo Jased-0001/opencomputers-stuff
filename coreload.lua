@@ -14,7 +14,6 @@ do
   end
   local function gk(t)
     e,_,a,_,_ = computer.pullSignal(t)
-    gpu.set(1,1,e..string.char(a))
     if e == "key_down" then
       return string.char(a)
     else
